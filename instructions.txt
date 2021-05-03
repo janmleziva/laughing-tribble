@@ -1,0 +1,23 @@
+connector.class=io.confluent.connect.jdbc.JdbcSourceConnector
+errors.log.include.messages= true
+incrementing.column.name=UserTestResultsHistoryID
+connection.password=${env::DB_PASSWORD}
+tasks.max=5
+instance.name=SB02
+config.providers=env
+config.providers.env.file.dir=/tmp
+table.poll.interval.ms=50000
+table.whitelist=UserTestResultsHistory
+mode=incrementing
+key.converter.schemas.enable=false
+topic.prefix=qax6_audit_
+config.providers.env.class=io.lenses.connect.secrets.providers.ENVSecretProvider
+connection.user=${env::DB_USER}
+poll.interval.ms=50000
+name=UserTestResultsHistory
+value.converter.schemas.enable=false
+connection.url=jdbc:sqlserver://10.4.50.60:49377;databaseName=DBCASEMGMT;
+numeric.precision.mapping=false
+value.converter=org.apache.kafka.connect.json.JsonConverter
+errors.log.enable=true
+key.converter=org.apache.kafka.connect.json.JsonConverter
