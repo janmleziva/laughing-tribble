@@ -21,4 +21,3 @@ numeric.precision.mapping=false
 value.converter=org.apache.kafka.connect.json.JsonConverter
 errors.log.enable=true
 key.converter=org.apache.kafka.connect.json.JsonConverter
-qwert, awdasd , wsdfghj
