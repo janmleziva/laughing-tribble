@@ -22,3 +22,4 @@ value.converter=org.apache.kafka.connect.json.JsonConverter
 errors.log.enable=true
 key.converter=org.apache.kafka.connect.json.JsonConverter
 --removing the line bellow
+
